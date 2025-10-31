@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import { MessageCircle, ArrowDown } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-gifts.jpg";
@@ -13,15 +14,9 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="flex flex-wrap gap-3">
-              <Badge variant="secondary" className="px-4 py-2 text-sm">
-                ✨ Entrega local
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">
-                🎨 Personalización
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">
-                ⚡ Atención el mismo día
-              </Badge>
+              <ButtonColorful label="✨ Entrega local" className="h-auto py-2" />
+              <ButtonColorful label="🎨 Personalización" className="h-auto py-2" />
+              <ButtonColorful label="⚡ Atención el mismo día" className="h-auto py-2" />
             </div>
 
             <div className="space-y-4">
@@ -35,12 +30,9 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
-                <a href="#productos">
-                  Ver Catálogo
-                  <ArrowDown className="w-5 h-5" />
-                </a>
-              </Button>
+              <ButtonColorful label="Ver Catálogo" className="h-14 px-10 text-base" asChild>
+                <a href="#productos" />
+              </ButtonColorful>
               <Button size="lg" variant="whatsapp" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
