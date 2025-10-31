@@ -14,9 +14,9 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="flex flex-wrap gap-3">
-              <ButtonColorful label="✨ Entrega local" className="h-auto py-2" />
-              <ButtonColorful label="🎨 Personalización" className="h-auto py-2" />
-              <ButtonColorful label="⚡ Atención el mismo día" className="h-auto py-2" />
+              <ButtonColorful label="✨ Entrega local" className="h-auto py-2 rounded-full" />
+              <ButtonColorful label="🎨 Personalización" className="h-auto py-2 rounded-full" />
+              <ButtonColorful label="⚡ Atención el mismo día" className="h-auto py-2 rounded-full" />
             </div>
 
             <div className="space-y-4">
@@ -30,9 +30,9 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <ButtonColorful label="Ver Catálogo" className="h-14 px-10 text-base" asChild>
-                <a href="#productos" />
-              </ButtonColorful>
+              <a href="#productos">
+                <ButtonColorful label="Ver Catálogo" className="h-14 px-10 text-base" />
+              </a>
               <Button size="lg" variant="whatsapp" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
