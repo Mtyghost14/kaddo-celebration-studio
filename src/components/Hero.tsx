@@ -31,7 +31,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#productos">
-                <ButtonColorful label="Ver Catálogo" className="h-14 px-10 text-base" />
+                <ButtonColorful label="Ver Catálogo" className="h-14 px-10 text-base rounded-full" />
               </a>
               <Button size="lg" variant="whatsapp" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
