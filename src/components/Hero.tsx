@@ -26,7 +26,7 @@ const Hero = () => {
 
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                HOLA! y globos que dicen{" "}
+                HOLA! y GLOBOS que dicen{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">¡wow!</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
